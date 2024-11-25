@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+}
+:root {
+  --font-family-one: "Montserrat", sans-serif;
+  --font-family-two: "Arvo", serif;
+  --font-family-three: "Open Sans", sans-serif;
+  --font-color-one: RGB(159, 163, 167);
+  --font-color-two: RGB(51, 51, 51);
+  --font-size-one: 1rem;
+  --font-size-two: 1.5rem;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  background-color: #2d300c;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-rows: 25rem 25rem 25rem 15rem;
+  grid-template-areas:
+    "item1 item1 item1 item1 item1 item1 item2 item2 item2 item2 item2 item2"
+    "item3 item3 item3 item4 item4 item4 item4 item4 item4 item5 item5 item5"
+    "item6 item6 item6 item7 item7 item7 item7 item7 item7 item5 item5 item5"
+    "item8 item8 item8  item9 item9 item9 item10 item10 item10 item10 item10 item10";
+}
+
+.Iformation-Iphone {
+  background-color: white;
+  grid-area: item1;
+  display: flex;
+  /* width: 80%; */
+  /* margin: auto; */
+  justify-content: space-around;
+  align-items: end;
+}
+.inforamtion-iphone-text {
+  width: 30%;
+  text-align: start;
+  /* margin-top: 3rem; */
+  align-self: center;
+}
+.inforamtion-iphone-text .title {
+  font-size: var(--font-size-one);
+  color: var(--font-color-one);
+  font-family: var(--font-family-one);
+}
+.inforamtion-iphone-text .h2 {
+  font-size: var(--font-size-two);
+  color: var(--font-color-two);
+  font-family: var(--font-family-two);
+}
+.inforamtion-iphone-text .title-two {
+  font-size: var(--font-size-one);
+  color: var(--font-color-one);
+  font-family: var(--font-family-three);
+}
+.iphone-image {
+  width: 40%;
+}
+.iphone-image img {
+  width: 100%;
+}
+
+.Text-Learn-More {
+  background-color: rgb(247, 248, 249);
+  grid-area: item2;
+  text-align: center;
+}
+.contant {
+  margin: 100px auto;
+  width: 80%;
+}
+.Text-Learn-More .contant .title {
+  color: var(--font-color-one);
+  font-size: var(--font-size-one);
+  font-family: var(--font-family-one);
+}
+.Text-Learn-More .contant h1 {
+  /* background-color: salmon; */
+  font-size: 3.5rem;
+  margin: 10px;
+  font-weight: 400;
+}
+.Key-Board {
+  background-color: orangered;
+  grid-area: item3;
+  text-align: center; /*ask why link */
+  padding: 3rem;
+}
+.Key-Board .image img {
+  width: 100%;
+}
+.part-three a {
+  text-decoration: none;
+  color: gold;
+  text-transform: uppercase;
+}
+.Old-TV-Information {
+  background-color: white;
+  grid-area: item4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.left-side {
+  width: 30%;
+  align-self: end;
+  /* justify-self: start; */
+}
+.right-side {
+  width: 30%;
+  transform: translateY(-20%);
+  word-spacing: 0.5rem;
+}
+.left-side img {
+  width: 30rem;
+  transform: translate(-60%);
+}
+.left-side .text {
+  color: var(--font-color-one);
+  font-size: var(--font-size-one);
+  font-family: var(--font-family-one);
+}
+.left-side h3 {
+  color: black;
+  font-size: var(--font-size-two);
+  font-family: var(--font-family-three);
+  font-weight: 300;
+  margin: 1rem;
+  padding: 0.2rem;
+}
+.right-side .text {
+  color: var(--font-color-one);
+  font-size: 0.75rem;
+  font-family: var(--font-family-one);
+  padding: 10px;
+}
+.right-side a {
+  text-decoration: none;
+  color: aqua;
+  letter-spacing: 0.1rem;
+}
+.Save-File {
+  background-color: RGB(143, 118, 188);
+  grid-area: item5;
+}
+.circle {
+  width: 100%;
+  height: 20.8rem;
+  background-image: linear-gradient(rgb(129, 102, 176), rgb(129, 102, 176));
+  border-radius: 50%;
+}
+.image {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.popular {
+  padding: 2rem;
+  background-image: url(../images/_Shape.png);
+  background-repeat: no-repeat;
+  background-position: 0.8rem 50%;
+  background-size: 1rem;
+  background-color: rgb(139, 114, 182);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  /* justify-items: ; */
+  align-items: center;
+  width: 5rem;
+  height: 0.1rem;
+  position: relative;
+  left: 4rem;
+  font-family: var(--font-family-three);
+  letter-spacing: 0.1rem;
+  color: white;
+}
+.meet {
+  font-family: var(--font-family-one);
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+}
+.image img {
+  width: 55%;
+}
+.part-save {
+  margin-top: 6rem;
+  text-align: center;
+  /* padding: 1rem; */
+}
+.part-save h2 {
+  font-family: var(--font-size-two);
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.part-save .infromation-save {
+  padding: 2rem;
+  color: white;
+}
+.part-save a {
+  text-decoration: none;
+  background-color: gold;
+  font-family: var(--font-color-one);
+  letter-spacing: 0.25rem;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 3rem;
+}
+
+.Games {
+  background-color: white;
+  grid-area: item6;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.Games img {
+  width: 95%;
+}
+.Games a {
+  text-decoration: none;
+  color: #09c;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+.Games h3 {
+  font-family: var(--font-color-two);
+  font-weight: 400;
+  font-size: 2rem;
+}
+.I-Pad {
+  background-color: skyblue;
+  grid-area: item7;
+}
+.small-text {
+  width: 6rem;
+  height: 1rem;
+  background-color: tomato;
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.con {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.I-Pad strong {
+  width: 1rem;
+  height: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.I-Pad img {
+  width: 100%;
+  margin-top: 2.1rem;
+  transform: translateX(-10%);
+}
+.Twitter {
+  grid-area: item8;
+  background-image: radial-gradient(
+    rgb(53, 207, 237) 50%,
+    rgb(56, 213, 244) 50%
+  );
+  text-align: center;
+}
+.contant-twitter {
+  transform: translateY(50%);
+}
+.contant-twitter {
+  font-size: 0.9rem;
+  font-family: var(--font-family-one);
+}
+
+.Much-Better {
+  background-color: white;
+  grid-area: item9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.better {
+  width: 7rem;
+  height: 1rem;
+  background-color: green;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.8;
+}
+.Much-Better h3 {
+  font-family: var(--font-family-one);
+  width: 16rem;
+  transform: translateX(-30%);
+}
+.TV-Information {
+  background-color: #2c2c2c;
+  grid-area: item10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TV-Information img {
+  width: 80%;
+}
+.text-tv h3 {
+  color: white;
+  width: 80%;
+  font-size: 2rem;
+  font-family: var(--font-color-two);
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-auto-rows: 25rem 25rem 25rem 15rem;
+    grid-template-areas:
+      "item1 item1 item1 item1 item1 item1 item2 item2 item2 item2 item2 item2"
+      "item3 item3 item3 item4 item4 item4 item4 item4 item4 item5 item5 item5"
+      "item6 item6 item6 item7 item7 item7 item7 item7 item7 item5 item5 item5"
+      "item8 item8 item8  item9 item9 item9 item10 item10 item10 item10 item10 item10"; */
+    grid-template-rows: 30rem 28rem 28rem 30rem 30rem 25rem 15rem 15rem;
+    grid-template-areas:
+      "item2 item2 item2 item2 item2 item2"
+      "item1 item1 item1 item1 item1 item1"
+      "item3 item3 item3 item6 item6 item6"
+      "item4 item4 item4 item4 item4 item4"
+      "item8 item8 item8 item5 item5 item5"
+      "item7 item7 item7 item5 item5 item5"
+      "item9 item9 item9 item9 item9 item9"
+      "item10 item10 item10 item10 item10 item10";
+  }
+  .Twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: ; */
+  }
+  .contant-twitter {
+    transform: translateY(20%);
+  }
+  .contant-twitter {
+    font-size: 0.7rem;
+  }
+  .Save-File {
+    background-color: RGB(143, 118, 188);
+    grid-area: item5;
+    display: flex;
+    flex-direction: column;
+  }
+  .circle {
+    width: 100%;
+    height: 25.8rem;
+    background-image: linear-gradient(rgb(129, 102, 176), rgb(129, 102, 176));
+    border-radius: 50%;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .popular {
+    position: relative;
+    left: 0rem;
+    top: -1rem;
+  }
+  .part-save {
+    position: relative;
+    top: 4rem;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+}
